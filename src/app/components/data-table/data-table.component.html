@@ -1,1 +1,17 @@
-<p>data-table works!</p>
+<div class="data-table-container">
+  <h2>Tabela de Dados</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Região</th>
+        <th>Espécie</th>
+        <th>Status de Conservação</th>
+        <th>Temperatura da Água</th>
+        <th>pH</th>
+        <th>Nível de Poluição</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of data">
+        <td>{{ data.region }}</td>
