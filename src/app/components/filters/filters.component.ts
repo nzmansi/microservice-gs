@@ -1,12 +1,9 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-filters',
   standalone: true,
-  imports: [],
   templateUrl: './filters.component.html',
-  styleUrl: './filters.component.css'
+  styleUrls: ['./filters.component.css']
 })
-export class FiltersComponent {
-
-  }
+export class FiltersComponent { }

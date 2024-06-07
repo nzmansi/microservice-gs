@@ -1,24 +1,19 @@
-// import { HttpClient } from '@angular/common/http';
-// import { Injectable } from '@angular/core';
-// import { Observable } from 'rxjs';
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
-// @Injectable({
-//   providedIn: 'root'
-// })
-// export class OceanDataService {
+@Injectable({
+  providedIn: 'root'
+})
 
-//   constructor(private httpClient: HttpClient) { }
+export class OceanDataService {
 
-//   getAllData(): Observable<any> {
-//     return this.httpClient.get('https://fiap-3sis-gs-20241.azurewebsites.net/index.html');
-//   }
+  private apiUrl = 'https://fiap-3sis-gs-20241.azurewebsites.net/api'; // Base URL da API
 
-//   filterData(filters: any): Observable<any> {
-//     // Implementar lógica para filtrar dados com base nos filtros
-//     // (Exemplo: utilizar parâmetros de consulta na requisição HTTP)
-//     return this.httpClient.get('https://fiap-3sis-gs-20241.azurewebsites.net/index.html', {
-//       params: filters
-//     });
-//   }
-// }
+  constructor(private http: HttpClient) { }
 
+  getOceanData(): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/ocean-data`); // Ajuste o endpoint conforme necessário
+  }
+
+}

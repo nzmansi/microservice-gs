@@ -1,16 +1,19 @@
-import { TestBed } from '@angular/core/testing';
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
-import { OceanDataService } from './ocean-data.service';
+@Injectable({
+  providedIn: 'root'
+})
+export class OceanDataService {
 
-describe('OceanDataService', () => {
-  let service: OceanDataService;
+  private apiUrl = 'https://fiap-3sis-gs-20241.azurewebsites.net/api'; // Base URL da API
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(OceanDataService);
-  });
+  constructor(private http: HttpClient) { }
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
-  });
-});
+  getOceanData(): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/ocean-data`); // Ajuste o endpoint conforme necessário
+  }
+
+  // Adicione métodos adicionais conforme necessário para outras requisições à API
+}

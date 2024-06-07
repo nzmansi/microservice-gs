@@ -1,12 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-barra-inicial',
   standalone: true,
-  imports: [],
   templateUrl: './barra-inicial.component.html',
-  styleUrl: './barra-inicial.component.css'
+  styleUrls: ['./barra-inicial.component.css']
 })
-export class BarraInicialComponent {
-
-}
+export class BarraInicialComponent { }

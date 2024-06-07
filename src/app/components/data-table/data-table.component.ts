@@ -1,12 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { OceanDataService } from '../../services/ocean-data.service';
 
 @Component({
   selector: 'app-data-table',
   standalone: true,
-  imports: [],
   templateUrl: './data-table.component.html',
-  styleUrl: './data-table.component.css'
+  styleUrls: ['./data-table.component.css']
 })
-export class DataTableComponent {
+export class DataTableComponent implements OnInit {
 
+  oceanData: any[] = [];
+
+  constructor(private oceanDataService: OceanDataService) { }
+
+  ngOnInit(): void {
+    this.oceanDataService.getOceanData().subscribe(data => {
+      this.oceanData = data;
+    });
+  }
 }
