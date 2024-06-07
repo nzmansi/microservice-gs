@@ -8,12 +8,12 @@ import { Observable } from 'rxjs';
 
 export class OceanDataService {
 
-  private apiUrl = 'https://fiap-3sis-gs-20241.azurewebsites.net/api'; // Base URL da API
+  private apiUrl = 'https://fiap-3sis-gs-20241.azurewebsites.net/api';
 
   constructor(private http: HttpClient) { }
 
   getOceanData(): Observable<any> {
-    return this.http.get<any>(`${this.apiUrl}/ocean-data`); // Ajuste o endpoint conforme necessário
+    return this.http.get<any>(`${this.apiUrl}/ocean-data`);
   }
 
 }

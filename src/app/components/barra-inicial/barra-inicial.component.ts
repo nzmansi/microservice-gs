@@ -6,4 +6,5 @@ import { Component, Output, EventEmitter } from '@angular/core';
   templateUrl: './barra-inicial.component.html',
   styleUrls: ['./barra-inicial.component.css']
 })
+
 export class BarraInicialComponent { }
