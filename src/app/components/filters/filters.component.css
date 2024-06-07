@@ -1,0 +1,46 @@
+.filters-container {
+    margin: 20px 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .filters h2 {
+    font-weight: 500;
+  }
+  
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .filter {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .filter label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 400;
+  }
+  
+  .filter input {
+    width: 150px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .search-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #005f6b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+  
+  .search-button:hover {
+    background-color: #004a54;
+  }
+  

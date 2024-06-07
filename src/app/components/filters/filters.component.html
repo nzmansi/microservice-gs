@@ -1,41 +1,39 @@
-<!-- <div class="filters-container">
+<div class="filters-container">
   <h2>Filtros</h2>
 
-  <label for="region">Região:</label>
-  <select id="region" [(ngModel)]="selectedRegion" (change)="onFilterChange()">
-    <option value="">Todas as Regiões</option>
-    <option [value]="region" *ngFor="let region of regions">{{ region }}</option>
-  </select>
+  <div class="filters">
 
-  <label for="species">Espécie:</label>
-  <select id="species" [(ngModel)]="selectedSpecies" (change)="onFilterChange()">
-    <option value="">Todas as Espécies</option>
-    <option [value]="species" *ngFor="let species of species">{{ species }}</option>
-  </select>
+    <div class="filter">
+      <label for="region">Região</label>
+      <input type="text" id="region" name="region">
+    </div>
 
-  <label for="conservationStatus">Status de Conservação:</label>
-  <select id="conservationStatus" [(ngModel)]="selectedConservationStatus" (change)="onFilterChange()">
-    <option value="">Todos os Status</option>
-    <option [value]="status" *ngFor="let status of conservationStatuses">{{ status }}</option>
-  </select>
+    <div class="filter">
+      <label for="species">Espécies</label>
+      <input type="text" id="species" name="species">
+    </div>
 
-  <label for="waterTemperatureMin">Temperatura Mínima da Água:</label>
-  <input type="number" id="waterTemperatureMin" [(ngModel)]="waterTemperatureMin" (change)="onFilterChange()">
+    <div class="filter">
+      <label for="status">Status de Conservação</label>
+      <input type="text" id="status" name="status">
+    </div>
 
-  <label for="waterTemperatureMax">Temperatura Máxima da Água:</label>
-  <input type="number" id="waterTemperatureMax" [(ngModel)]="waterTemperatureMax" (change)="onFilterChange()">
+    <div class="filter">
+      <label for="temperature">Temperatura da Água</label>
+      <input type="text" id="temperature" name="temperature">
+    </div>
 
-  <label for="pHMin">pH Mínimo:</label>
-  <input type="number" id="pHMin" [(ngModel)]="pHMin" (change)="onFilterChange()">
+    <div class="filter">
+      <label for="ph">pH</label>
+      <input type="text" id="ph" name="ph">
+    </div>
 
-  <label for="pHMax">pH Máximo:</label>
-  <input type="number" id="pHMax" [(ngModel)]="pHMax" (change)="onFilterChange()">
+    <div class="filter">
+      <label for="pollution">Níveis de Poluição</label>
+      <input type="text" id="pollution" name="pollution">
+    </div>
+    
+  </div>
 
-  <label for="pollutionLevel">Nível de Poluição:</label>
-  <select id="pollutionLevel" [(ngModel)]="selectedPollutionLevel" (change)="onFilterChange()">
-    <option value="">Todos os Níveis</option>
-    <option [value]="level" *ngFor="let level of pollutionLevels">{{ level }}</option>
-  </select>
-
-  <button (click)="onFilterData()">Filtrar</button>
-</div> -->
+  <button class="search-button">Pesquisar</button>
+</div>

@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #005f6b;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .navbar-title {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .navbar-links a {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+  }
+  
+  .navbar-links a:hover {
+    text-decoration: underline;
+  }
+  
