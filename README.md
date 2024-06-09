@@ -9,6 +9,7 @@ Intruções para rodar:
 -Clonar o projeto dentro do repositório local com o comando "git clone https://github.com/nzmansi/microservice-gs.git";  
 -Entrar no projeto com o comando "cd .\microservice-gs\";  
 -Abrir o projeto no VS Code com o comando "code .";  
--Com o projeto aberto, abrir o terminal e digitar o comando "npm install";  
+-Com o projeto aberto, abrir o terminal e digitar o comando "npm install -g @angular/cli";  
+-Caso esse comando dê problema, inicialize o Windows Powershell em modo de administrador e execute o comando "Set-ExecutionPolicy RemoteSigned" e digite "A" para concluir;  
 -Abrir a página web com o comando "ng serve";  
 -Clicar no link fornecido no terminal.
