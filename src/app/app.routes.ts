@@ -1,12 +1,8 @@
 import { Routes } from '@angular/router';
-import { AppComponent } from './app.component';
-import { OceanConditionsComponent } from './components/ocean-conditions/ocean-conditions.component';
-import { EndangeredSpeciesComponent } from './components/endangered-species/endangered-species.component';
-import { ConservationProjectsComponent } from './components/conservation-projects/conservation-projects.component';
+import { IntegrantesEquipeComponent } from './components/integrantes-equipe/integrantes-equipe.component';
+import { PaginaInicialComponent } from './components/pagina-inicial/pagina-inicial.component';
 
 export const routes: Routes = [
-  { path: '', component: AppComponent },
-  { path: 'ocean-conditions', component: OceanConditionsComponent },
-  { path: 'endangered-species', component: EndangeredSpeciesComponent },
-  { path: 'conservation-projects', component: ConservationProjectsComponent }
+  { path: '', component: PaginaInicialComponent },
+  { path: 'integrantes-equipe', component: IntegrantesEquipeComponent },
 ];

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OceanConditionsComponent } from './ocean-conditions.component';
+import { PaginaInicialComponent } from './pagina-inicial.component';
 
-describe('OceanConditionsComponent', () => {
-  let component: OceanConditionsComponent;
-  let fixture: ComponentFixture<OceanConditionsComponent>;
+describe('PaginaInicialComponent', () => {
+  let component: PaginaInicialComponent;
+  let fixture: ComponentFixture<PaginaInicialComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [OceanConditionsComponent]
+      imports: [PaginaInicialComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(OceanConditionsComponent);
+    fixture = TestBed.createComponent(PaginaInicialComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
