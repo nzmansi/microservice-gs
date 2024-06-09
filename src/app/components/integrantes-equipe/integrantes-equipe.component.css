@@ -1,0 +1,15 @@
+.integrantes {
+    margin-left: 20px;
+}
+
+.texto-titulo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 1000
+}
+
+.texto-integrantes {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+}

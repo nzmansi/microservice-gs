@@ -1,5 +1,6 @@
 .filters-container {
     margin: 20px 0;
+    padding-left: 20px;
     font-family: 'Roboto', sans-serif;
   }
   
@@ -21,6 +22,7 @@
     display: block;
     margin-bottom: 5px;
     font-weight: 400;
+    font-style: italic;
   }
   
   .filter input {
