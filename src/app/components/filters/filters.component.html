@@ -2,38 +2,62 @@
   <h2>Filtros</h2>
 
   <div class="filters">
-
     <div class="filter">
       <label for="region">Região</label>
-      <input type="text" id="region" name="region">
+      <select id="region" name="region" [(ngModel)]="selectedRegion">
+        <option value="All">Selecione uma região</option>
+        <option value="Atlântico Norte">Atlântico Norte</option>
+        <option value="Atlântico Sul">Atlântico Sul</option>
+        <option value="Pacífico Norte">Pacífico Norte</option>
+        <option value="Pacífico Sul">Pacífico Sul</option>
+        <option value="Índico">Índico</option>
+        <option value="Ártico">Ártico</option>
+        <option value="Antártico">Antártico</option>
+      </select>
     </div>
 
     <div class="filter">
       <label for="species">Espécies</label>
-      <input type="text" id="species" name="species">
+      <select id="species" name="species" [(ngModel)]="selectedEspecie">
+        <option value="All">Selecione uma espécie</option>
+        <option value="Coral">Coral</option>
+        <option value="Tubarão-branco">Tubarão-branco</option>
+        <option value="Peixe-palhaço">Peixe-palhaço</option>
+        <option value="Baleia-azul">Baleia-azul</option>
+        <option value="Tartaruga-verde">Tartaruga-verde</option>
+      </select>
     </div>
 
     <div class="filter">
       <label for="status">Status de Conservação</label>
-      <input type="text" id="status" name="status">
+      <select id="projectType" name="projectType" [(ngModel)]="selectedProject">
+        <option value="All">Selecione um tipo de projeto</option>
+        <option value="Educação Marinha">Educação Marinha</option>
+        <option value="Limpeza de Praias">Limpeza de Praias</option>
+        <option value="Restauração de Corais">Restauração de Corais</option>
+      </select>
     </div>
 
     <div class="filter">
       <label for="temperature">Temperatura da Água</label>
-      <input type="text" id="temperature" name="temperature">
+      <input type="text" id="temperature" name="temperature" [(ngModel)]="selectedTemp">
     </div>
 
     <div class="filter">
       <label for="ph">pH</label>
-      <input type="text" id="ph" name="ph">
+      <input type="text" id="ph" name="ph" [(ngModel)]="selectedPH">
     </div>
 
     <div class="filter">
       <label for="pollution">Níveis de Poluição</label>
-      <input type="text" id="pollution" name="pollution">
+      <select id="pollution" name="pollution" [(ngModel)]="selectedLevel">
+        <option value="All">Selecione o nível de Poluição</option>
+        <option value="Baixo">Baixo</option>
+        <option value="Moderado">Moderado</option>
+        <option value="Alto">Alto</option>
+      </select>
     </div>
-    
   </div>
 
-  <button class="search-button">Pesquisar</button>
+  <button class="search-button" (click)="getSelectedValues()">Pesquisar</button>
 </div>

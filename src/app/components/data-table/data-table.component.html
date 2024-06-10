@@ -1,9 +1,9 @@
 <div class="data-table-container">
-
+  
   <h2>Resultados</h2>
 
   <table class="data-table">
-
+ 
     <thead>
       <tr>
         <th>Região</th>
@@ -14,18 +14,17 @@
         <th>Nível de Poluição</th>
       </tr>
     </thead>
-
+    
     <tbody>
-      <tr *ngFor="let item of rowData">
+      <tr *ngFor="let item of  rowData">
         <td>{{ item.regiao }}</td>
-        <td>{{ item.especies }}</td>
-        <td>{{ item.projetosConservacao }}</td>
+        <td><span *ngFor="let especie of item?.especies">{{ especie?.nome }}, </span></td>
+        <td><span *ngFor="let projeto of item?.projetosConservacao">{{ projeto?.nomeProjeto }}, </span></td>
         <td>{{ item.temperaturaAgua }}</td>
         <td>{{ item.pH }}</td>
         <td>{{ item.nivelPoluicao }}</td>
       </tr>
     </tbody>
-    
+   
   </table>
-
 </div>

@@ -10,6 +10,13 @@ import { DataTableComponent } from '../data-table/data-table.component';
   templateUrl: './pagina-inicial.component.html',
   styleUrl: './pagina-inicial.component.css'
 })
+
 export class PaginaInicialComponent {
+
+  filters: any = {};
+
+  onFilterChange(filters: any) {
+    this.filters = filters;
+  }
 
 }
